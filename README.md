@@ -13,3 +13,5 @@ OR
 pip3 install jsonlib
 pip3 install telnetlib3
 pip3 install python-time
+
+https://support.biamp.com/Audia-Nexia/Control/Audia-Nexia_command_string_calculator
