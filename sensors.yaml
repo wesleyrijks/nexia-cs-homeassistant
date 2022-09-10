@@ -4,7 +4,7 @@
   - platform: command_line
     name: nexia
     command: "python ./nexia-cs-homeassistant/read.py"
-    scan_interval: 1
+    scan_interval: 0.2
     value_template: 'OK'
     json_attributes:
       - peakmeter-ch1
