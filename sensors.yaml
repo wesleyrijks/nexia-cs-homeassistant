@@ -18,18 +18,30 @@
       nexia-peakmeter-ch1:
        friendly_name: peakmeter-ch1 
        value_template: "{{states.sensor.nexia.attributes['peakmeter-ch1']}}"
+       device_class: 'signal_strength'
+       unit_of_measurement: 'db'
       nexia-peakmeter-ch2:
        friendly_name: peakmeter-ch2 
        value_template: "{{states.sensor.nexia.attributes['peakmeter-ch2']}}"
+       device_class: 'signal_strength'
+       unit_of_measurement: 'db'
       nexia-peakmeter-ch3:
        friendly_name: peakmeter-ch3
        value_template: "{{states.sensor.nexia.attributes['peakmeter-ch3']}}"
+       device_class: 'signal_strength'
+       unit_of_measurement: 'db'
       nexia-peakmeter-ch4:
        friendly_name: peakmeter-ch4
        value_template: "{{states.sensor.nexia.attributes['peakmeter-ch4']}}"
+       device_class: 'signal_strength'
+       unit_of_measurement: 'db'
       nexia-peakmeter-ch5:
        friendly_name: peakmeter-ch5
        value_template: "{{states.sensor.nexia.attributes['peakmeter-ch5']}}"
+       device_class: 'signal_strength'
+       unit_of_measurement: 'db'
       nexia-peakmeter-ch6:
        friendly_name: peakmeter-ch6
        value_template: "{{states.sensor.nexia.attributes['peakmeter-ch6']}}"
+       device_class: 'signal_strength'
+       unit_of_measurement: 'db'
