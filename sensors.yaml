@@ -45,3 +45,11 @@
        device_class: signal_strength
        unit_of_measurement: 'db'
        value_template: "{{states.sensor.nexia.attributes['peakmeter-ch6']}}"
+      nexia_levelcontrol_mute:
+       friendly_name: levelcontrol-mute
+       value_template: "{{states.sensor.nexia.attributes['levelcontrol-mute']}}"
+      nexia_levelcontrol_volume:
+       friendly_name: levelcontrol-volume
+       device_class: signal_strength
+       unit_of_measurement: 'db'
+       value_template: "{{states.sensor.nexia.attributes['levelcontrol-volume']}}"
