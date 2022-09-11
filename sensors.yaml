@@ -3,7 +3,7 @@
 #######################################
   - platform: command_line
     name: nexia
-    command: "python ./nexia-cs-homeassistant/read.py"
+    command: "python ./nexia-cs-homeassistant/__init__.py"
     scan_interval: 0.2
     value_template: 'OK'
     json_attributes:
@@ -15,33 +15,33 @@
       - peakmeter-ch6
   - platform: template
     sensors:
-      nexia-peakmeter-ch1:
-       friendly_name: peakmeter-ch1 
+      nexia_peakmeter_ch1:
+       friendly_name: peakmeter-ch1
+       device_class: signal_strength
+       unit_of_measurement: 'db'
        value_template: "{{states.sensor.nexia.attributes['peakmeter-ch1']}}"
-       device_class: 'signal_strength'
+      nexia_peakmeter_ch2:
+       friendly_name: peakmeter-ch2
+       device_class: signal_strength
        unit_of_measurement: 'db'
-      nexia-peakmeter-ch2:
-       friendly_name: peakmeter-ch2 
        value_template: "{{states.sensor.nexia.attributes['peakmeter-ch2']}}"
-       device_class: 'signal_strength'
-       unit_of_measurement: 'db'
-      nexia-peakmeter-ch3:
+      nexia_peakmeter_ch3:
        friendly_name: peakmeter-ch3
+       device_class: signal_strength
+       unit_of_measurement: 'db'
        value_template: "{{states.sensor.nexia.attributes['peakmeter-ch3']}}"
-       device_class: 'signal_strength'
-       unit_of_measurement: 'db'
-      nexia-peakmeter-ch4:
+      nexia_peakmeter_ch4:
        friendly_name: peakmeter-ch4
+       device_class: signal_strength
+       unit_of_measurement: 'db'
        value_template: "{{states.sensor.nexia.attributes['peakmeter-ch4']}}"
-       device_class: 'signal_strength'
-       unit_of_measurement: 'db'
-      nexia-peakmeter-ch5:
+      nexia_peakmeter_ch5:
        friendly_name: peakmeter-ch5
+       device_class: signal_strength
+       unit_of_measurement: 'db'
        value_template: "{{states.sensor.nexia.attributes['peakmeter-ch5']}}"
-       device_class: 'signal_strength'
-       unit_of_measurement: 'db'
-      nexia-peakmeter-ch6:
+      nexia_peakmeter_ch6:
        friendly_name: peakmeter-ch6
-       value_template: "{{states.sensor.nexia.attributes['peakmeter-ch6']}}"
-       device_class: 'signal_strength'
+       device_class: signal_strength
        unit_of_measurement: 'db'
+       value_template: "{{states.sensor.nexia.attributes['peakmeter-ch6']}}"
